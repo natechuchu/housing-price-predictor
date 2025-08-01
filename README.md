@@ -1,53 +1,66 @@
-# Housing Price Predictor 🎯
-A short, descriptive subtitle (e.g., "Hand Gesture Music App using OpenCV and Mediapipe")
+# Housing Price Predictor | Kaggle Competition
+
+This project is a submission for the [Kaggle House Prices: Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques) competition. The goal is to predict the final price of homes in Ames, Iowa, using machine learning models trained on various house features such as square footage, neighborhood, condition, and more.
 
 ## 📌 Table of Contents
 - [Overview](#overview)
-- [Features](#features)
-- [Demo](#demo)
+- [Dataset](#dataset)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Feature Engineering](#feature-engineering)
+- [Modeling](#modeling)
+- [Results](#results)
 - [Tech Stack](#tech-stack)
-- [Setup Instructions](#setup-instructions)
-- [Screenshots / GIFs](#screenshots--gifs)
-- [Future Improvements](#future-improvements)
-- [Contact](#contact)
+
 
 ## 🧠 Overview
-Describe what the project does, why you built it, and what problem it solves.
+The dataset includes 79 features describing almost every aspect of a residential home. The task is to predict the **SalePrice** of each home using regression-based models. My model was in the **top 4%** of submissions.
 
-> Example: This app allows users to play musical notes using hand gestures detected via their webcam. It uses MediaPipe to detect hand landmarks and a custom neural network to recognize finger positions.
+This project focuses on:
+- Data preprocessing
+- Careful Feature engineering
+- Experimenting with different ML models
+- Hyperparameter tuning for improved accuracy
 
-## 🚀 Features
-- Real-time hand tracking with MediaPipe
-- Custom-trained gesture classifier
-- Virtual music playback using Pygame
-- Multi-octave support via left hand position
+## 📊 Dataset
+- **Train set**: 1,460 entries
+- **Test set**: 1,459 entries
+- Source: [Kaggle competition page](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)
+
+## 🔍 Exploratory Data Analysis
+Conducted EDA to:
+- Identify missing values and data imbalances
+- Detect skewed or categorical features
+
+## 🧰 Feature Engineering
+- Imputed missing values with group-wise medians/modes
+- Converted categorical features using one-hot encoding and ordinal encoding
+
+## 🤖 Modeling
+
+Tested the following models:
+- Decision Tree Regressor
+- Random Forest
+- XGBoost
+
+### 🔧 Tuning
+Used `GridSearchCV` and cross-validation (RMSE as scoring metric) to tune hyperparameters.
+
+---
+
+## 📈 Results
+
+| Model          | Public Score (MAE) |
+|----------------|--------------------|
+| Decision Tree  | 21,217.96          |
+| Random Forest  | 16,619.08          |
+| XGBoost        | 14,376.90          |
+
 
 ## 🛠 Tech Stack
-- Python
-- OpenCV
-- MediaPipe
-- TensorFlow / PyTorch
-- Pygame
-- Jupyter Notebooks (for training)
 
-## 🖥 Demo
-You can embed:
-- YouTube video link
-- GIF demo (record with LICEcap or ScreenToGif)
-
-## 🧪 Setup Instructions
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/project-name.git
-cd project-name
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python main.py
+- Python 3.10
+- NumPy, Pandas
+- Matplotlib, Seaborn
+- Scikit-Learn
+- XGBoost, RandomForestRegressor, DecisionTreeRegressor
+- Jupyter Notebook
