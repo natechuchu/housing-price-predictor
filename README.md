@@ -43,7 +43,7 @@ Tested the following models:
 - XGBoost
 
 ### 🔧 Tuning
-Used `GridSearchCV` and cross-validation (RMSE as scoring metric) to tune hyperparameters.
+Used `GridSearchCV` and cross-validation to tune hyperparameters.
 
 ---
 
