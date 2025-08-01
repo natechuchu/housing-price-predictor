@@ -1,6 +1,6 @@
 # Housing Price Predictor | Kaggle Competition
 
-This project is a submission for the [Kaggle House Prices: Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques) competition. The goal is to predict the final price of homes in Ames, Iowa, using machine learning models trained on various house features such as square footage, neighborhood, condition, and more.
+This project is a submission for the [Housing Prices Competition for Kaggle Learn Users](https://www.kaggle.com/competitions/home-data-for-ml-course/data) competition. The goal is to predict the final price of homes in Ames, Iowa, using machine learning models trained on various house features such as square footage, neighborhood, condition, and more.
 
 ## 📌 Table of Contents
 - [Overview](#overview)
@@ -22,9 +22,8 @@ This project focuses on:
 - Hyperparameter tuning for improved accuracy
 
 ## 📊 Dataset
-- **Train set**: 1,460 entries
-- **Test set**: 1,459 entries
-- Source: [Kaggle competition page](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)
+- **Train set**: ~1500 entries
+- **Test set**: ~1500 entries
 
 ## 🔍 Exploratory Data Analysis
 Conducted EDA to:
@@ -44,8 +43,6 @@ Tested the following models:
 
 ### 🔧 Tuning
 Used `GridSearchCV` and cross-validation to tune hyperparameters.
-
----
 
 ## 📈 Results
 
