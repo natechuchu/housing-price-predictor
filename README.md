@@ -13,7 +13,9 @@ This project is a submission for the [Housing Prices Competition for Kaggle Lear
 
 
 ## 🧠 Overview
-The dataset includes 79 features describing almost every aspect of a residential home. The task is to predict the **SalePrice** of each home using regression-based models. My model was in the **top 4%** of submissions.
+The dataset includes 79 features describing almost every aspect of a residential home. The task is to predict the **SalePrice** of each home using regression-based models. 
+
+My final model was in the **top 4%** of submissions.
 
 This project focuses on:
 - Data preprocessing
